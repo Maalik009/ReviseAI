@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Revision Notes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>Revision Topics</h1>
+    <p>Choose a topic to revise.</p>
+
+    {% for subject, topic in notes.items() %}
+
+        <h2>{{ topic.title }}</h2>
+
+        {% for section in topic.sections %}
+
+            <h3>{{ section.heading }}</h3>
+            <p>{{ section.content }}</p>
+
+        {% endfor %}
+
+    {% endfor %}
+
+    <a href="/">Back to Home</a>
+
+</body>
+</html>

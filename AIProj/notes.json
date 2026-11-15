@@ -1,0 +1,29 @@
+
+{
+  "Business": {
+    "title": "Business",
+    "sections": [
+      {
+        "heading": "Animal Cells",
+        "content": "Animal cells contain a nucleus, cytoplasm, cell membrane, mitochondria and ribosomes."
+      },
+      {
+        "heading": "Plant Cells",
+        "content": "Plant cells have a cellulose cell wall and a permanent vacuole. Photosynthetic plant cells also contain chloroplasts."
+      }
+    ]
+  },
+  "Economics": {
+    "title": "Economics",
+    "sections": [
+      {
+        "heading": "What are Enzymes?",
+        "content": "Enzymes are biological catalysts. They speed up chemical reactions without being used up."
+      },
+      {
+        "heading": "Temperature and Enzymes",
+        "content": "High temperatures can denature enzymes by changing the shape of their active sites."
+      }
+    ]
+  }
+}
