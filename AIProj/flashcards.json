@@ -1,0 +1,67 @@
+{
+    "business/Unit 1": [],
+    "economics/1 2": [
+        {
+            "question": "What does the term 'rational' mean in the context of economic agents?",
+            "answer": "It means agents consider the outcomes of their choices and recognise the net benefits of each option."
+        },
+        {
+            "question": "How is a demand curve defined and what does a movement along it represent?",
+            "answer": "A demand curve plots price against quantity demanded. A movement along it occurs when price changes, causing a change in quantity demanded."
+        },
+        {
+            "question": "What is the difference between a shift of the demand curve and a movement along it?",
+            "answer": "A movement along the curve is caused by a price change; a shift occurs when a non\u2011price factor (e.g., income, tastes) changes, altering demand at every price."
+        },
+        {
+            "question": "What does the Law of Diminishing Marginal Utility explain about the demand curve?",
+            "answer": "It states that each additional unit consumed provides less extra satisfaction, leading consumers to buy fewer units as price rises, which makes the demand curve downward sloping."
+        },
+        {
+            "question": "How is Price Elasticity of Demand (PED) interpreted when its value is between 0 and 1?",
+            "answer": "It indicates relatively inelastic demand: the percentage change in quantity demanded is less than the percentage change in price."
+        }
+    ],
+    "economics/1 1": [
+        {
+            "question": "What does the term \"ceteris paribus\" mean in economics?",
+            "answer": "All other variables remain constant."
+        },
+        {
+            "question": "Give an example of a positive economic statement from the notes.",
+            "answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months."
+        },
+        {
+            "question": "How is opportunity cost defined in the revision notes?",
+            "answer": "The loss of the next best alternative when making a decision."
+        },
+        {
+            "question": "What causes an outward shift of the Production Possibility Frontier (PPF)?",
+            "answer": "An increase in the quality or quantity of the available factors of production."
+        },
+        {
+            "question": "Name one advantage and one disadvantage of a free\u2011market economy as listed in the notes.",
+            "answer": "Advantage: profit incentive motivates people to work or develop entrepreneurial ideas. Disadvantage: wealth is concentrated in the hands of the few, increasing inequality."
+        },
+        {
+            "question": "What is a positive statement in economics and give one example from the notes.",
+            "answer": "A positive statement is based on empirical evidence and can be proven true or false. Example: The UK unemployment rate has fallen from 4% to 3.7% in the past three months."
+        },
+        {
+            "question": "What is a normative statement in economics and give one example from the notes.",
+            "answer": "A normative statement focuses on value judgments and opinions about what policies should be. Example: Every economy should aim to provide free healthcare for its citizens."
+        },
+        {
+            "question": "What does the basic economic problem describe?",
+            "answer": "The basic economic problem states that finite resources (factors of production) are available in relation to infinite wants and needs, requiring choices about the most efficient use of those resources."
+        },
+        {
+            "question": "List the four factors of production mentioned in the notes.",
+            "answer": "Capital, Enterprise, Land, Labour."
+        },
+        {
+            "question": "What are the four functions of money as outlined in the notes?",
+            "answer": "1. Medium of exchange; 2. Measure of value; 3. Store of value; 4. Method of deferred payment."
+        }
+    ]
+}

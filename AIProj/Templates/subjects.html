@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browse Subjects - ReviseAI</title>
+
+<body>
+
+    <h1>Browse Subjects</h1>
+
+    <p>Choose a subject to start revising.</p>
+
+    <div class="subject-list">
+
+        {% for subject in subjects %}
+
+            <div class="subject-card">
+
+                <h2>{{ subject.title }}</h2>
+
+                <p>
+                    {{ subject.topics | length }} topics available
+                </p>
+
+                <a href="{{ url_for('subject_page',
+                                    subject_id=subject.id) }}">
+                    Browse Topics
+                </a>
+
+            </div>
+
+        {% else %}
+
+            <p>No subjects found yet.</p>
+
+        {% endfor %}
+
+    </div>
+
+    <a href="{{ url_for('home') }}">Back to homepage</a>
+
+</body>
+</html>

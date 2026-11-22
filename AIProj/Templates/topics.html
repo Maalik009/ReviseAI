@@ -2,29 +2,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Revision Notes</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>{{ subject.title }} - ReviseAI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
 
-    <h1>Revision Topics</h1>
-    <p>Choose a topic to revise.</p>
+    <a href="{{ url_for('subjects_page') }}">
+        ← Back to Subjects
+    </a>
 
-    {% for subject, topic in notes.items() %}
+    <h1>{{ subject.title }}</h1>
 
-        <h2>{{ topic.title }}</h2>
+    <p>Choose a topic to start revising.</p>
 
-        {% for section in topic.sections %}
+    <div class="topic-list">
 
-            <h3>{{ section.heading }}</h3>
-            <p>{{ section.content }}</p>
+        {% for topic in subject.topics %}
+
+            <div class="topic-card">
+
+                <h2>{{ topic.title }}</h2>
+
+                <a href="{{ url_for('topic_page',
+                                    subject_id=subject.id,
+                                    topic_id=topic.id) }}">
+                    View Notes
+                </a>
+
+            </div>
+
+        {% else %}
+
+            <p>No topics found for this subject yet.</p>
 
         {% endfor %}
 
-    {% endfor %}
-
-    <a href="/">Back to Home</a>
+    </div>
 
 </body>
 </html>

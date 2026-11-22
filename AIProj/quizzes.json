@@ -1,0 +1,386 @@
+{
+    "e652c97a-8f6e-4f02-951c-b6d9b76317c2": {
+        "subject_id": "economics",
+        "topic_id": "1 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Which statement best describes the economic principle of ceteris paribus?",
+                "options": [
+                    "All variables change simultaneously",
+                    "All other variables remain constant",
+                    "Only one variable changes",
+                    "Variables are irrelevant"
+                ],
+                "answer": "All other variables remain constant",
+                "explanation": "Ceteris paribus means that when analyzing a relationship, all other variables are held constant."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is an example of a positive economic statement?",
+                "options": [
+                    "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                    "Every economy should aim to provide free healthcare for its citizens",
+                    "Corporation taxes should be higher than personal income taxes",
+                    "The best way to deal with a rise in crime is to employ more police"
+                ],
+                "answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                "explanation": "Positive statements are based on empirical evidence and can be proven true or false; the unemployment rate example is factual."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT listed as a factor of production in the notes?",
+                "options": [
+                    "Capital",
+                    "Enterprise",
+                    "Land",
+                    "Technology"
+                ],
+                "answer": "Technology",
+                "explanation": "The notes list capital, enterprise, land, and labour as factors of production; technology is not mentioned."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "What causes an outward shift of a production possibility frontier (PPF)?",
+                "options": [
+                    "A decrease in the quality of available factors of production",
+                    "An increase in the quantity or quality of available factors of production",
+                    "An increase in consumer demand",
+                    "A decrease in production efficiency"
+                ],
+                "answer": "An increase in the quantity or quality of available factors of production",
+                "explanation": "An outward shift indicates economic growth, which occurs when the productive potential increases due to better or more factors."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is listed as an advantage of a free\u2011market economy?",
+                "options": [
+                    "Social equality",
+                    "Less unemployment",
+                    "Profit incentive motivates people",
+                    "Central planning"
+                ],
+                "answer": "Profit incentive motivates people",
+                "explanation": "The notes state that profit incentive motivates people to work or develop entrepreneurial ideas in a free\u2011market economy."
+            },
+            {
+                "type": "written",
+                "question": "Explain the difference between positive and normative statements, citing examples from the notes.",
+                "answer": "Positive statements are based on empirical evidence and can be proven true or false, such as \"The UK unemployment rate has fallen from 4% to 3.7%\". Normative statements involve value judgments and opinions about what should be, like \"Every economy should aim to provide free healthcare for its citizens\".",
+                "explanation": "The answer distinguishes the empirical nature of positive statements from the value\u2011laden nature of normative statements, using the provided examples."
+            },
+            {
+                "type": "written",
+                "question": "Define opportunity cost and give an example based on the notes.",
+                "answer": "Opportunity cost is the loss of the next best alternative when making a decision. For example, if a producer chooses to allocate all resources to produce good A instead of good B, the opportunity cost is the maximum output of good B that could have been produced.",
+                "explanation": "The answer uses the definition from the notes and illustrates it with a generic production decision."
+            },
+            {
+                "type": "written",
+                "question": "Describe the pros and cons of specialization and division of labour as presented.",
+                "answer": "Pros: higher labour productivity lowers cost per unit, enabling lower prices, higher profits, and potential higher wages; allows firms to sell internationally. Cons: task repetition can cause boredom, lower motivation, higher turnover, reduced quality, lack of variety, and difficulty for workers to find new jobs if they lose their specialised role.",
+                "explanation": "The answer summarizes the table of pros and cons exactly as listed in the notes."
+            },
+            {
+                "type": "written",
+                "question": "List the functions of money and explain how each function facilitates economic activity.",
+                "answer": "Medium of exchange: eliminates the need for barter and double coincidence of wants. Measure of value: allows prices to be expressed in a common unit, aiding decision\u2011making. Store of value: money can be saved and retained over time, providing liquidity. Method of deferred payment: enables credit and future debt settlement, allowing consumption now and payment later.",
+                "explanation": "Each function is described with its role in facilitating transactions, savings, and credit as outlined in the notes."
+            },
+            {
+                "type": "written",
+                "question": "Compare the advantages and disadvantages of a free\u2011market economy and a command economy as outlined.",
+                "answer": "Free\u2011market advantages: profit incentive, greater variety, competition improves quality and lowers prices, encourages innovation, unlimited profits and wealth, efficient resource use. Disadvantages: wealth concentration, increased inequality, potential quality decline, worker exploitation, resource depletion, environmental degradation, monopolies, consumer exploitation. Command economy advantages: social equality, equal wages, less unemployment, rapid allocation to priorities, avoidance of consumer exploitation. Disadvantages: wage disincentives for skill acquisition, lack of innovation, inefficiency with surpluses or shortages, black markets, limited living standards, restricted personal freedoms.",
+                "explanation": "The answer lists each advantage and disadvantage exactly as presented in the comparative table."
+            }
+        ],
+        "results": {
+            "score": 12,
+            "total": 10,
+            "answers": [
+                {
+                    "question": "Which statement best describes the economic principle of ceteris paribus?",
+                    "user_answer": "All other variables remain constant",
+                    "correct_answer": "All other variables remain constant",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Ceteris paribus means that when analyzing a relationship, all other variables are held constant."
+                },
+                {
+                    "question": "Which of the following is an example of a positive economic statement?",
+                    "user_answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                    "correct_answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Positive statements are based on empirical evidence and can be proven true or false; the unemployment rate example is factual."
+                },
+                {
+                    "question": "Which of the following is NOT listed as a factor of production in the notes?",
+                    "user_answer": "Technology",
+                    "correct_answer": "Technology",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "The notes list capital, enterprise, land, and labour as factors of production; technology is not mentioned."
+                },
+                {
+                    "question": "What causes an outward shift of a production possibility frontier (PPF)?",
+                    "user_answer": "An increase in the quantity or quality of available factors of production",
+                    "correct_answer": "An increase in the quantity or quality of available factors of production",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "An outward shift indicates economic growth, which occurs when the productive potential increases due to better or more factors."
+                },
+                {
+                    "question": "Which of the following is listed as an advantage of a free\u2011market economy?",
+                    "user_answer": "Profit incentive motivates people",
+                    "correct_answer": "Profit incentive motivates people",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "The notes state that profit incentive motivates people to work or develop entrepreneurial ideas in a free\u2011market economy."
+                },
+                {
+                    "question": "Explain the difference between positive and normative statements, citing examples from the notes.",
+                    "user_answer": "Positive statements can be proven to be true or false whereas normative are value judgement statements.",
+                    "correct_answer": "Positive statements are based on empirical evidence and can be proven true or false, such as \"The UK unemployment rate has fallen from 4% to 3.7%\". Normative statements involve value judgments and opinions about what should be, like \"Every economy should aim to provide free healthcare for its citizens\".",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "Define opportunity cost and give an example based on the notes.",
+                    "user_answer": "Opportunity cost is the value of the next best alternative foregone",
+                    "correct_answer": "Opportunity cost is the loss of the next best alternative when making a decision. For example, if a producer chooses to allocate all resources to produce good A instead of good B, the opportunity cost is the maximum output of good B that could have been produced.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "Describe the pros and cons of specialization and division of labour as presented.",
+                    "user_answer": "Specialisation leads to more efficiency and higher production. However workers can get bored and be demotivated.",
+                    "correct_answer": "Pros: higher labour productivity lowers cost per unit, enabling lower prices, higher profits, and potential higher wages; allows firms to sell internationally. Cons: task repetition can cause boredom, lower motivation, higher turnover, reduced quality, lack of variety, and difficulty for workers to find new jobs if they lose their specialised role.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You captured the main idea of specialization's benefits and drawbacks, but you omitted several important details."
+                },
+                {
+                    "question": "List the functions of money and explain how each function facilitates economic activity.",
+                    "user_answer": "Store of value.\r\nMedium of exchange.",
+                    "correct_answer": "Medium of exchange: eliminates the need for barter and double coincidence of wants. Measure of value: allows prices to be expressed in a common unit, aiding decision\u2011making. Store of value: money can be saved and retained over time, providing liquidity. Method of deferred payment: enables credit and future debt settlement, allowing consumption now and payment later.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You identified two of the four main functions of money, but omitted the measure of value and the method of deferred payment."
+                },
+                {
+                    "question": "Compare the advantages and disadvantages of a free\u2011market economy and a command economy as outlined.",
+                    "user_answer": "Free market economy can be profit driven.\r\nCommand economy can have resources spread efficiently.",
+                    "correct_answer": "Free\u2011market advantages: profit incentive, greater variety, competition improves quality and lowers prices, encourages innovation, unlimited profits and wealth, efficient resource use. Disadvantages: wealth concentration, increased inequality, potential quality decline, worker exploitation, resource depletion, environmental degradation, monopolies, consumer exploitation. Command economy advantages: social equality, equal wages, less unemployment, rapid allocation to priorities, avoidance of consumer exploitation. Disadvantages: wage disincentives for skill acquisition, lack of innovation, inefficiency with surpluses or shortages, black markets, limited living standards, restricted personal freedoms.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified a key advantage of each system, but you omitted many important points such as disadvantages and other advantages."
+                }
+            ]
+        }
+    },
+    "732de92d-d075-4953-b5c1-d8012f61a196": {
+        "subject_id": "business",
+        "topic_id": "Unit 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Revenue equals what?",
+                "options": [
+                    "Price x Quantity sold",
+                    "Fixed costs + Variable costs",
+                    "Total revenue - Total costs",
+                    "Price + Quantity sold"
+                ],
+                "answer": "Price x Quantity sold",
+                "explanation": "Revenue is calculated by multiplying the price of a product or service by the quantity sold."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT an example of a fixed cost?",
+                "options": [
+                    "Rent",
+                    "Salaries",
+                    "Raw materials",
+                    "Insurance"
+                ],
+                "answer": "Raw materials",
+                "explanation": "Raw materials are a variable cost because they fluctuate with production levels."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Total variable costs are calculated by multiplying variable cost per unit by what?",
+                "options": [
+                    "Total units of output",
+                    "Fixed costs",
+                    "Total revenue",
+                    "Total costs"
+                ],
+                "answer": "Total units of output",
+                "explanation": "Variable costs change with production, so they are multiplied by the number of units produced."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Share price is likely to increase when:",
+                "options": [
+                    "There are more sellers than buyers",
+                    "There are more buyers than sellers",
+                    "Demand remains unchanged",
+                    "Only when company profits decrease"
+                ],
+                "answer": "There are more buyers than sellers",
+                "explanation": "An increase in demand relative to supply pushes the share price upward."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT listed as an external environment factor?",
+                "options": [
+                    "Competition",
+                    "Market Conditions",
+                    "Company\u2019s internal policies",
+                    "Interest Rates"
+                ],
+                "answer": "Company\u2019s internal policies",
+                "explanation": "Internal policies are part of the internal environment, not external."
+            },
+            {
+                "type": "written",
+                "question": "Explain the difference between limited and unlimited liability.",
+                "answer": "Unlimited liability means owners are personally responsible for all business debts, risking personal assets. Limited liability limits owners\u2019 responsibility to the amount invested, protecting personal assets.",
+                "explanation": "The key distinction is the extent of personal financial risk for business owners."
+            },
+            {
+                "type": "written",
+                "question": "Define cash flow and explain its importance for business survival.",
+                "answer": "Cash flow is the net movement of money into and out of a business (Cash inflows minus Cash outflows). It is essential for covering day\u2011to\u2011day expenses, paying debts, and sustaining operations.",
+                "explanation": "Without positive cash flow, a business cannot meet obligations and may fail."
+            },
+            {
+                "type": "written",
+                "question": "Describe what a mission statement is and its purpose.",
+                "answer": "A mission statement is a brief qualitative statement summarizing a business\u2019s purpose and core values. It guides decision\u2011making and communicates the company\u2019s direction to stakeholders.",
+                "explanation": "It provides clarity and focus for both internal and external audiences."
+            },
+            {
+                "type": "written",
+                "question": "Explain what a social enterprise is and how it differs from a non\u2011profit organization.",
+                "answer": "A social enterprise prioritises social or environmental goals while also generating profit. A non\u2011profit focuses solely on a social objective and relies on fundraising, not profit generation.",
+                "explanation": "The key difference lies in the dual aim of profit and social impact for social enterprises."
+            },
+            {
+                "type": "written",
+                "question": "Outline the key characteristics that distinguish the private sector from the public sector.",
+                "answer": "The private sector consists of businesses owned by individuals or companies aiming to make a profit. The public sector is owned, funded, and operated by the government to provide public services.",
+                "explanation": "Ownership, funding source, and primary objectives differentiate the two sectors."
+            }
+        ],
+        "results": {
+            "score": 11,
+            "total": 20,
+            "answers": [
+                {
+                    "question": "Revenue equals what?",
+                    "user_answer": "Price x Quantity sold",
+                    "correct_answer": "Price x Quantity sold",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Revenue is calculated by multiplying the price of a product or service by the quantity sold."
+                },
+                {
+                    "question": "Which of the following is NOT an example of a fixed cost?",
+                    "user_answer": "Insurance",
+                    "correct_answer": "Raw materials",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 1,
+                    "explanation": "Raw materials are a variable cost because they fluctuate with production levels."
+                },
+                {
+                    "question": "Total variable costs are calculated by multiplying variable cost per unit by what?",
+                    "user_answer": "Total units of output",
+                    "correct_answer": "Total units of output",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Variable costs change with production, so they are multiplied by the number of units produced."
+                },
+                {
+                    "question": "Share price is likely to increase when:",
+                    "user_answer": "There are more buyers than sellers",
+                    "correct_answer": "There are more buyers than sellers",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "An increase in demand relative to supply pushes the share price upward."
+                },
+                {
+                    "question": "Which of the following is NOT listed as an external environment factor?",
+                    "user_answer": "Company\u2019s internal policies",
+                    "correct_answer": "Company\u2019s internal policies",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Internal policies are part of the internal environment, not external."
+                },
+                {
+                    "question": "Explain the difference between limited and unlimited liability.",
+                    "user_answer": "Limited liability is when owners are liable to how much they put into a business. Unlimited liability is when the owners of a business are liable to anything they own.",
+                    "correct_answer": "Unlimited liability means owners are personally responsible for all business debts, risking personal assets. Limited liability limits owners\u2019 responsibility to the amount invested, protecting personal assets.",
+                    "is_correct": true,
+                    "marks": 3,
+                    "max_marks": 3,
+                    "explanation": "You accurately described the key differences between limited and unlimited liability."
+                },
+                {
+                    "question": "Define cash flow and explain its importance for business survival.",
+                    "user_answer": "Cash flow is how easy money flows in and out the business.",
+                    "correct_answer": "Cash flow is the net movement of money into and out of a business (Cash inflows minus Cash outflows). It is essential for covering day\u2011to\u2011day expenses, paying debts, and sustaining operations.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You captured the basic idea that money moves in and out of the business, but you didn't explain that it is the net movement of cash or why this is crucial for covering expenses and keeping the business running."
+                },
+                {
+                    "question": "Describe what a mission statement is and its purpose.",
+                    "user_answer": "A mission statement is the overall purpose of the business.",
+                    "correct_answer": "A mission statement is a brief qualitative statement summarizing a business\u2019s purpose and core values. It guides decision\u2011making and communicates the company\u2019s direction to stakeholders.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified the main idea that a mission statement reflects a business\u2019s purpose, but you missed key details such as its brevity, the inclusion of core values, and its role in guiding decisions and communicating direction to stakeholders."
+                },
+                {
+                    "question": "Explain what a social enterprise is and how it differs from a non\u2011profit organization.",
+                    "user_answer": "I dont know.",
+                    "correct_answer": "A social enterprise prioritises social or environmental goals while also generating profit. A non\u2011profit focuses solely on a social objective and relies on fundraising, not profit generation.",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 3,
+                    "explanation": "The answer does not address the question."
+                },
+                {
+                    "question": "Outline the key characteristics that distinguish the private sector from the public sector.",
+                    "user_answer": "Private sector consists of privatised businesses who aim to make profits where as public sector aims for social welfare.",
+                    "correct_answer": "The private sector consists of businesses owned by individuals or companies aiming to make a profit. The public sector is owned, funded, and operated by the government to provide public services.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You captured the main differences, but you omitted the ownership and funding aspects of the public sector."
+                }
+            ]
+        }
+    }
+}

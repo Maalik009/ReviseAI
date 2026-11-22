@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flashcards - ReviseAI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <a href="{{ url_for('topic_page',
+                        subject_id=subject.id,
+                        topic_id=topic.id) }}">
+        ← Back to {{ topic.title }}
+    </a>
+
+    <h1>{{ topic.title }} Flashcards</h1>
+
+    <p>Test your knowledge!</p>
+
+    {% if flashcards %}
+
+        <div class="flashcard-panel">
+
+            <p id="card-count">
+                Card 1 of {{ flashcards|length }}
+            </p>
+
+            <div class="flashcard-side" id="question-side">
+                <h2>Question</h2>
+                <p id="question-text"></p>
+            </div>
+
+            <div class="flashcard-side" id="answer-side" hidden>
+                <h2>Answer</h2>
+                <p id="answer-text"></p>
+            </div>
+
+            <button type="button" id="flip-button">
+                Reveal Answer
+            </button>
+
+            <div class="card-navigation">
+                <button type="button" id="previous-button">
+                    Previous
+                </button>
+
+                <button type="button" id="next-button">
+                    Next
+                </button>
+            </div>
+
+        </div>
+
+        <script>
+            const cards = {{ flashcards | tojson }};
+
+            let currentIndex = 0;
+            let showingAnswer = false;
+
+            const questionSide =
+                document.getElementById("question-side");
+
+            const answerSide =
+                document.getElementById("answer-side");
+
+            const questionText =
+                document.getElementById("question-text");
+
+            const answerText =
+                document.getElementById("answer-text");
+
+            const cardCount =
+                document.getElementById("card-count");
+
+            const flipButton =
+                document.getElementById("flip-button");
+
+            const previousButton =
+                document.getElementById("previous-button");
+
+            const nextButton =
+                document.getElementById("next-button");
+
+            function displayCard() {
+
+                const card = cards[currentIndex];
+
+                questionText.textContent = card.question;
+                answerText.textContent = card.answer;
+
+                questionSide.hidden = showingAnswer;
+                answerSide.hidden = !showingAnswer;
+
+                cardCount.textContent =
+                    `Card ${currentIndex + 1} of ${cards.length}`;
+
+                flipButton.textContent = showingAnswer
+                    ? "Show Question"
+                    : "Reveal Answer";
+
+                previousButton.disabled = currentIndex === 0;
+
+                nextButton.disabled =
+                    currentIndex === cards.length - 1;
+            }
+
+            flipButton.addEventListener("click", function() {
+                showingAnswer = !showingAnswer;
+                displayCard();
+            });
+
+            previousButton.addEventListener("click", function() {
+
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    showingAnswer = false;
+                    displayCard();
+                }
+
+            });
+
+            nextButton.addEventListener("click", function() {
+
+                if (currentIndex < cards.length - 1) {
+                    currentIndex++;
+                    showingAnswer = false;
+                    displayCard();
+                }
+
+            });
+
+            displayCard();
+
+        </script>
+
+        <hr>
+
+        <h2>Manage Your Flashcards</h2>
+
+        {% for card in flashcards %}
+
+            <div class="manage-card">
+
+                <h3>Card {{ loop.index }}</h3>
+
+                <p><strong>Question:</strong> {{ card.question }}</p>
+
+                <p><strong>Answer:</strong> {{ card.answer }}</p>
+
+                <a href="{{ url_for(
+                    'flashcards_page',
+                    subject_id=subject.id,
+                    topic_id=topic.id,
+                    edit=loop.index0
+                ) }}">
+                    Edit
+                </a>
+
+                <form method="POST"
+                      onsubmit="return confirm('Are you sure you want to delete this flashcard?');">
+
+                    <input type="hidden" name="action" value="delete">
+
+                    <input type="hidden"
+                           name="card_index"
+                           value="{{ loop.index0 }}">
+
+                    <button type="submit">
+                        Delete
+                    </button>
+
+                </form>
+
+            </div>
+
+        {% endfor %}
+
+    {% else %}
+
+        <p>You haven't created any flashcards for this topic yet.</p>
+
+    {% endif %}
+
+    <hr>
+
+
+    <h2>Generate Flashcards with AI</h2>
+
+    <p>Let ReviseAI create revision questions from your notes.</p>
+
+    <form method="POST"
+          action="{{ url_for(
+              'generate_flashcards_page',
+              subject_id=subject.id,
+              topic_id=topic.id
+          ) }}">
+
+        <button type="submit">
+            Generate Flashcards with AI
+        </button>
+
+    </form>
+
+    <hr>
+
+    {% if edit_card %}
+
+        <h2>Edit Flashcard</h2>
+
+        <form method="POST">
+
+            <input type="hidden" name="action" value="edit">
+
+            <input type="hidden"
+                   name="card_index"
+                   value="{{ edit_card.index }}">
+
+            <label for="question">Your question:</label>
+
+            <textarea
+                id="question"
+                name="question"
+                required
+            >{{ edit_card.question }}</textarea>
+
+            <label for="answer">Your answer:</label>
+
+            <textarea
+                id="answer"
+                name="answer"
+                required
+            >{{ edit_card.answer }}</textarea>
+
+            <button type="submit">
+                Save Changes
+            </button>
+
+            <a href="{{ url_for(
+                'flashcards_page',
+                subject_id=subject.id,
+                topic_id=topic.id
+            ) }}">
+                Cancel
+            </a>
+
+        </form>
+
+        
+    {% else %}
+
+        <h2>Create a Flashcard</h2>
+
+        {% if error %}
+            <p>{{ error }}</p>
+        {% endif %}
+
+        <form method="POST">
+
+            <input type="hidden" name="action" value="add">
+
+            <label for="question">Your question:</label>
+
+            <textarea
+                id="question"
+                name="question"
+                required
+                placeholder="Enter your question..."
+            ></textarea>
+
+            <label for="answer">Your answer:</label>
+
+            <textarea
+                id="answer"
+                name="answer"
+                required
+                placeholder="Enter your answer..."
+            ></textarea>
+
+            <button type="submit">
+                Add Flashcard
+            </button>
+
+        </form>
+
+    {% endif %}
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ topic.title }} - ReviseAI</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <a href="{{ url_for('subjects_page') }}">
+        Subjects
+    </a>
+
+    /
+
+    <a href="{{ url_for('subject_page',
+                        subject_id=subject.id) }}">
+        {{ subject.title }}
+    </a>
+
+    <h1>{{ topic.title }}</h1>
+    <a href="{{ url_for('flashcards_page',
+                    subject_id=subject.id,
+                    topic_id=topic.id) }}">
+    Practise Flashcards
+</a>
+
+    <article>
+        {{ topic.content_html | safe }}
+    </article>
+
+
+<hr>
+
+<h2>Test Your Knowledge</h2>
+
+<p>Ready to see how much you've learned? Generate a 10-question quiz using AI.</p>
+
+<form method="POST"
+      action="{{ url_for(
+          'generate_quiz_page',
+          subject_id=subject.id,
+          topic_id=topic.id
+      ) }}">
+
+    <button type="submit">
+        Generate AI Quiz
+    </button>
+
+</form>
+
+<hr>
+
+
+</body>
+</html>
