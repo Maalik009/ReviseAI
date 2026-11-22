@@ -13,3 +13,5 @@ __pycache__/
 .pytest_cache/
 flashcards.json
 quizzes.json
+flashcards_backup.json
+quizzes_backup.json
