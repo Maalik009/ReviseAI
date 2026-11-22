@@ -1,5 +1,26 @@
 {
-    "business/Unit 1": [],
+    "business/Unit 1": [
+        {
+            "question": "What is the formula for calculating revenue?",
+            "answer": "Revenue = Price x Quantity sold."
+        },
+        {
+            "question": "What are the two types of costs that make up total costs, and how is each defined?",
+            "answer": "Fixed costs are expenses that do not vary with the level of production; variable costs fluctuate with changes in a company\u2019s level of production."
+        },
+        {
+            "question": "According to the notes, what is the relationship between profit, total revenue, and total costs?",
+            "answer": "Profit = Total revenue \u2013 Total costs; a negative value indicates a loss, a positive value indicates a gain."
+        },
+        {
+            "question": "What is the difference between unlimited liability and limited liability for business owners?",
+            "answer": "Unlimited liability means owners are personally responsible for all debts, putting personal assets at risk; limited liability means owners are only responsible up to their investment, protecting personal assets."
+        },
+        {
+            "question": "How does the share price change according to the number of buyers and sellers?",
+            "answer": "Share price increases when there are more buyers than sellers; it decreases when there are more sellers than buyers."
+        }
+    ],
     "economics/1 2": [
         {
             "question": "What does the term 'rational' mean in the context of economic agents?",

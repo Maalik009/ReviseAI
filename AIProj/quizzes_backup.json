@@ -1,0 +1,1058 @@
+{
+    "e652c97a-8f6e-4f02-951c-b6d9b76317c2": {
+        "subject_id": "economics",
+        "topic_id": "1 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Which statement best describes the economic principle of ceteris paribus?",
+                "options": [
+                    "All variables change simultaneously",
+                    "All other variables remain constant",
+                    "Only one variable changes",
+                    "Variables are irrelevant"
+                ],
+                "answer": "All other variables remain constant",
+                "explanation": "Ceteris paribus means that when analyzing a relationship, all other variables are held constant."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is an example of a positive economic statement?",
+                "options": [
+                    "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                    "Every economy should aim to provide free healthcare for its citizens",
+                    "Corporation taxes should be higher than personal income taxes",
+                    "The best way to deal with a rise in crime is to employ more police"
+                ],
+                "answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                "explanation": "Positive statements are based on empirical evidence and can be proven true or false; the unemployment rate example is factual."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT listed as a factor of production in the notes?",
+                "options": [
+                    "Capital",
+                    "Enterprise",
+                    "Land",
+                    "Technology"
+                ],
+                "answer": "Technology",
+                "explanation": "The notes list capital, enterprise, land, and labour as factors of production; technology is not mentioned."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "What causes an outward shift of a production possibility frontier (PPF)?",
+                "options": [
+                    "A decrease in the quality of available factors of production",
+                    "An increase in the quantity or quality of available factors of production",
+                    "An increase in consumer demand",
+                    "A decrease in production efficiency"
+                ],
+                "answer": "An increase in the quantity or quality of available factors of production",
+                "explanation": "An outward shift indicates economic growth, which occurs when the productive potential increases due to better or more factors."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is listed as an advantage of a free\u2011market economy?",
+                "options": [
+                    "Social equality",
+                    "Less unemployment",
+                    "Profit incentive motivates people",
+                    "Central planning"
+                ],
+                "answer": "Profit incentive motivates people",
+                "explanation": "The notes state that profit incentive motivates people to work or develop entrepreneurial ideas in a free\u2011market economy."
+            },
+            {
+                "type": "written",
+                "question": "Explain the difference between positive and normative statements, citing examples from the notes.",
+                "answer": "Positive statements are based on empirical evidence and can be proven true or false, such as \"The UK unemployment rate has fallen from 4% to 3.7%\". Normative statements involve value judgments and opinions about what should be, like \"Every economy should aim to provide free healthcare for its citizens\".",
+                "explanation": "The answer distinguishes the empirical nature of positive statements from the value\u2011laden nature of normative statements, using the provided examples."
+            },
+            {
+                "type": "written",
+                "question": "Define opportunity cost and give an example based on the notes.",
+                "answer": "Opportunity cost is the loss of the next best alternative when making a decision. For example, if a producer chooses to allocate all resources to produce good A instead of good B, the opportunity cost is the maximum output of good B that could have been produced.",
+                "explanation": "The answer uses the definition from the notes and illustrates it with a generic production decision."
+            },
+            {
+                "type": "written",
+                "question": "Describe the pros and cons of specialization and division of labour as presented.",
+                "answer": "Pros: higher labour productivity lowers cost per unit, enabling lower prices, higher profits, and potential higher wages; allows firms to sell internationally. Cons: task repetition can cause boredom, lower motivation, higher turnover, reduced quality, lack of variety, and difficulty for workers to find new jobs if they lose their specialised role.",
+                "explanation": "The answer summarizes the table of pros and cons exactly as listed in the notes."
+            },
+            {
+                "type": "written",
+                "question": "List the functions of money and explain how each function facilitates economic activity.",
+                "answer": "Medium of exchange: eliminates the need for barter and double coincidence of wants. Measure of value: allows prices to be expressed in a common unit, aiding decision\u2011making. Store of value: money can be saved and retained over time, providing liquidity. Method of deferred payment: enables credit and future debt settlement, allowing consumption now and payment later.",
+                "explanation": "Each function is described with its role in facilitating transactions, savings, and credit as outlined in the notes."
+            },
+            {
+                "type": "written",
+                "question": "Compare the advantages and disadvantages of a free\u2011market economy and a command economy as outlined.",
+                "answer": "Free\u2011market advantages: profit incentive, greater variety, competition improves quality and lowers prices, encourages innovation, unlimited profits and wealth, efficient resource use. Disadvantages: wealth concentration, increased inequality, potential quality decline, worker exploitation, resource depletion, environmental degradation, monopolies, consumer exploitation. Command economy advantages: social equality, equal wages, less unemployment, rapid allocation to priorities, avoidance of consumer exploitation. Disadvantages: wage disincentives for skill acquisition, lack of innovation, inefficiency with surpluses or shortages, black markets, limited living standards, restricted personal freedoms.",
+                "explanation": "The answer lists each advantage and disadvantage exactly as presented in the comparative table."
+            }
+        ],
+        "results": {
+            "score": 12,
+            "total": 10,
+            "answers": [
+                {
+                    "question": "Which statement best describes the economic principle of ceteris paribus?",
+                    "user_answer": "All other variables remain constant",
+                    "correct_answer": "All other variables remain constant",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Ceteris paribus means that when analyzing a relationship, all other variables are held constant."
+                },
+                {
+                    "question": "Which of the following is an example of a positive economic statement?",
+                    "user_answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                    "correct_answer": "The UK unemployment rate has fallen from 4% to 3.7% in the past three months",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Positive statements are based on empirical evidence and can be proven true or false; the unemployment rate example is factual."
+                },
+                {
+                    "question": "Which of the following is NOT listed as a factor of production in the notes?",
+                    "user_answer": "Technology",
+                    "correct_answer": "Technology",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "The notes list capital, enterprise, land, and labour as factors of production; technology is not mentioned."
+                },
+                {
+                    "question": "What causes an outward shift of a production possibility frontier (PPF)?",
+                    "user_answer": "An increase in the quantity or quality of available factors of production",
+                    "correct_answer": "An increase in the quantity or quality of available factors of production",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "An outward shift indicates economic growth, which occurs when the productive potential increases due to better or more factors."
+                },
+                {
+                    "question": "Which of the following is listed as an advantage of a free\u2011market economy?",
+                    "user_answer": "Profit incentive motivates people",
+                    "correct_answer": "Profit incentive motivates people",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "The notes state that profit incentive motivates people to work or develop entrepreneurial ideas in a free\u2011market economy."
+                },
+                {
+                    "question": "Explain the difference between positive and normative statements, citing examples from the notes.",
+                    "user_answer": "Positive statements can be proven to be true or false whereas normative are value judgement statements.",
+                    "correct_answer": "Positive statements are based on empirical evidence and can be proven true or false, such as \"The UK unemployment rate has fallen from 4% to 3.7%\". Normative statements involve value judgments and opinions about what should be, like \"Every economy should aim to provide free healthcare for its citizens\".",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "Define opportunity cost and give an example based on the notes.",
+                    "user_answer": "Opportunity cost is the value of the next best alternative foregone",
+                    "correct_answer": "Opportunity cost is the loss of the next best alternative when making a decision. For example, if a producer chooses to allocate all resources to produce good A instead of good B, the opportunity cost is the maximum output of good B that could have been produced.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "Describe the pros and cons of specialization and division of labour as presented.",
+                    "user_answer": "Specialisation leads to more efficiency and higher production. However workers can get bored and be demotivated.",
+                    "correct_answer": "Pros: higher labour productivity lowers cost per unit, enabling lower prices, higher profits, and potential higher wages; allows firms to sell internationally. Cons: task repetition can cause boredom, lower motivation, higher turnover, reduced quality, lack of variety, and difficulty for workers to find new jobs if they lose their specialised role.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You captured the main idea of specialization's benefits and drawbacks, but you omitted several important details."
+                },
+                {
+                    "question": "List the functions of money and explain how each function facilitates economic activity.",
+                    "user_answer": "Store of value.\r\nMedium of exchange.",
+                    "correct_answer": "Medium of exchange: eliminates the need for barter and double coincidence of wants. Measure of value: allows prices to be expressed in a common unit, aiding decision\u2011making. Store of value: money can be saved and retained over time, providing liquidity. Method of deferred payment: enables credit and future debt settlement, allowing consumption now and payment later.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You identified two of the four main functions of money, but omitted the measure of value and the method of deferred payment."
+                },
+                {
+                    "question": "Compare the advantages and disadvantages of a free\u2011market economy and a command economy as outlined.",
+                    "user_answer": "Free market economy can be profit driven.\r\nCommand economy can have resources spread efficiently.",
+                    "correct_answer": "Free\u2011market advantages: profit incentive, greater variety, competition improves quality and lowers prices, encourages innovation, unlimited profits and wealth, efficient resource use. Disadvantages: wealth concentration, increased inequality, potential quality decline, worker exploitation, resource depletion, environmental degradation, monopolies, consumer exploitation. Command economy advantages: social equality, equal wages, less unemployment, rapid allocation to priorities, avoidance of consumer exploitation. Disadvantages: wage disincentives for skill acquisition, lack of innovation, inefficiency with surpluses or shortages, black markets, limited living standards, restricted personal freedoms.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified a key advantage of each system, but you omitted many important points such as disadvantages and other advantages."
+                }
+            ]
+        }
+    },
+    "732de92d-d075-4953-b5c1-d8012f61a196": {
+        "subject_id": "business",
+        "topic_id": "Unit 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Revenue equals what?",
+                "options": [
+                    "Price x Quantity sold",
+                    "Fixed costs + Variable costs",
+                    "Total revenue - Total costs",
+                    "Price + Quantity sold"
+                ],
+                "answer": "Price x Quantity sold",
+                "explanation": "Revenue is calculated by multiplying the price of a product or service by the quantity sold."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT an example of a fixed cost?",
+                "options": [
+                    "Rent",
+                    "Salaries",
+                    "Raw materials",
+                    "Insurance"
+                ],
+                "answer": "Raw materials",
+                "explanation": "Raw materials are a variable cost because they fluctuate with production levels."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Total variable costs are calculated by multiplying variable cost per unit by what?",
+                "options": [
+                    "Total units of output",
+                    "Fixed costs",
+                    "Total revenue",
+                    "Total costs"
+                ],
+                "answer": "Total units of output",
+                "explanation": "Variable costs change with production, so they are multiplied by the number of units produced."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Share price is likely to increase when:",
+                "options": [
+                    "There are more sellers than buyers",
+                    "There are more buyers than sellers",
+                    "Demand remains unchanged",
+                    "Only when company profits decrease"
+                ],
+                "answer": "There are more buyers than sellers",
+                "explanation": "An increase in demand relative to supply pushes the share price upward."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT listed as an external environment factor?",
+                "options": [
+                    "Competition",
+                    "Market Conditions",
+                    "Company\u2019s internal policies",
+                    "Interest Rates"
+                ],
+                "answer": "Company\u2019s internal policies",
+                "explanation": "Internal policies are part of the internal environment, not external."
+            },
+            {
+                "type": "written",
+                "question": "Explain the difference between limited and unlimited liability.",
+                "answer": "Unlimited liability means owners are personally responsible for all business debts, risking personal assets. Limited liability limits owners\u2019 responsibility to the amount invested, protecting personal assets.",
+                "explanation": "The key distinction is the extent of personal financial risk for business owners."
+            },
+            {
+                "type": "written",
+                "question": "Define cash flow and explain its importance for business survival.",
+                "answer": "Cash flow is the net movement of money into and out of a business (Cash inflows minus Cash outflows). It is essential for covering day\u2011to\u2011day expenses, paying debts, and sustaining operations.",
+                "explanation": "Without positive cash flow, a business cannot meet obligations and may fail."
+            },
+            {
+                "type": "written",
+                "question": "Describe what a mission statement is and its purpose.",
+                "answer": "A mission statement is a brief qualitative statement summarizing a business\u2019s purpose and core values. It guides decision\u2011making and communicates the company\u2019s direction to stakeholders.",
+                "explanation": "It provides clarity and focus for both internal and external audiences."
+            },
+            {
+                "type": "written",
+                "question": "Explain what a social enterprise is and how it differs from a non\u2011profit organization.",
+                "answer": "A social enterprise prioritises social or environmental goals while also generating profit. A non\u2011profit focuses solely on a social objective and relies on fundraising, not profit generation.",
+                "explanation": "The key difference lies in the dual aim of profit and social impact for social enterprises."
+            },
+            {
+                "type": "written",
+                "question": "Outline the key characteristics that distinguish the private sector from the public sector.",
+                "answer": "The private sector consists of businesses owned by individuals or companies aiming to make a profit. The public sector is owned, funded, and operated by the government to provide public services.",
+                "explanation": "Ownership, funding source, and primary objectives differentiate the two sectors."
+            }
+        ],
+        "results": {
+            "score": 11,
+            "total": 20,
+            "answers": [
+                {
+                    "question": "Revenue equals what?",
+                    "user_answer": "Price x Quantity sold",
+                    "correct_answer": "Price x Quantity sold",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Revenue is calculated by multiplying the price of a product or service by the quantity sold."
+                },
+                {
+                    "question": "Which of the following is NOT an example of a fixed cost?",
+                    "user_answer": "Insurance",
+                    "correct_answer": "Raw materials",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 1,
+                    "explanation": "Raw materials are a variable cost because they fluctuate with production levels."
+                },
+                {
+                    "question": "Total variable costs are calculated by multiplying variable cost per unit by what?",
+                    "user_answer": "Total units of output",
+                    "correct_answer": "Total units of output",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Variable costs change with production, so they are multiplied by the number of units produced."
+                },
+                {
+                    "question": "Share price is likely to increase when:",
+                    "user_answer": "There are more buyers than sellers",
+                    "correct_answer": "There are more buyers than sellers",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "An increase in demand relative to supply pushes the share price upward."
+                },
+                {
+                    "question": "Which of the following is NOT listed as an external environment factor?",
+                    "user_answer": "Company\u2019s internal policies",
+                    "correct_answer": "Company\u2019s internal policies",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Internal policies are part of the internal environment, not external."
+                },
+                {
+                    "question": "Explain the difference between limited and unlimited liability.",
+                    "user_answer": "Limited liability is when owners are liable to how much they put into a business. Unlimited liability is when the owners of a business are liable to anything they own.",
+                    "correct_answer": "Unlimited liability means owners are personally responsible for all business debts, risking personal assets. Limited liability limits owners\u2019 responsibility to the amount invested, protecting personal assets.",
+                    "is_correct": true,
+                    "marks": 3,
+                    "max_marks": 3,
+                    "explanation": "You accurately described the key differences between limited and unlimited liability."
+                },
+                {
+                    "question": "Define cash flow and explain its importance for business survival.",
+                    "user_answer": "Cash flow is how easy money flows in and out the business.",
+                    "correct_answer": "Cash flow is the net movement of money into and out of a business (Cash inflows minus Cash outflows). It is essential for covering day\u2011to\u2011day expenses, paying debts, and sustaining operations.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You captured the basic idea that money moves in and out of the business, but you didn't explain that it is the net movement of cash or why this is crucial for covering expenses and keeping the business running."
+                },
+                {
+                    "question": "Describe what a mission statement is and its purpose.",
+                    "user_answer": "A mission statement is the overall purpose of the business.",
+                    "correct_answer": "A mission statement is a brief qualitative statement summarizing a business\u2019s purpose and core values. It guides decision\u2011making and communicates the company\u2019s direction to stakeholders.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified the main idea that a mission statement reflects a business\u2019s purpose, but you missed key details such as its brevity, the inclusion of core values, and its role in guiding decisions and communicating direction to stakeholders."
+                },
+                {
+                    "question": "Explain what a social enterprise is and how it differs from a non\u2011profit organization.",
+                    "user_answer": "I dont know.",
+                    "correct_answer": "A social enterprise prioritises social or environmental goals while also generating profit. A non\u2011profit focuses solely on a social objective and relies on fundraising, not profit generation.",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 3,
+                    "explanation": "The answer does not address the question."
+                },
+                {
+                    "question": "Outline the key characteristics that distinguish the private sector from the public sector.",
+                    "user_answer": "Private sector consists of privatised businesses who aim to make profits where as public sector aims for social welfare.",
+                    "correct_answer": "The private sector consists of businesses owned by individuals or companies aiming to make a profit. The public sector is owned, funded, and operated by the government to provide public services.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You captured the main differences, but you omitted the ownership and funding aspects of the public sector."
+                }
+            ]
+        }
+    },
+    "4a2242fe-ecb9-4510-815d-8678e7646c11": {
+        "subject_id": "business",
+        "topic_id": "Unit 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Which equation correctly calculates a business\u2019s revenue?",
+                "options": [
+                    "Revenue = Fixed Costs + Variable Costs",
+                    "Revenue = Price \u00d7 Quantity sold",
+                    "Revenue = Total Costs \u2013 Profit",
+                    "Revenue = Cash inflows \u2013 Cash outflows"
+                ],
+                "answer": "Revenue = Price \u00d7 Quantity sold",
+                "explanation": "Revenue is defined as the total income generated by selling goods or services, calculated as Price multiplied by Quantity sold."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is an example of a variable cost?",
+                "options": [
+                    "Rent",
+                    "Salaries for permanent staff",
+                    "Raw materials",
+                    "Insurance"
+                ],
+                "answer": "Raw materials",
+                "explanation": "Variable costs fluctuate with production level; raw materials are a classic example, whereas rent, permanent staff salaries, and insurance are fixed."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Profit is best described as:",
+                "options": [
+                    "Total revenue minus total costs",
+                    "Total costs minus total revenue",
+                    "Cash inflows minus cash outflows",
+                    "Revenue divided by quantity sold"
+                ],
+                "answer": "Total revenue minus total costs",
+                "explanation": "Profit equals total revenue minus total costs; a negative value indicates a loss, a positive value a gain."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which measure is NOT listed as a way to gauge business growth?",
+                "options": [
+                    "Increase in brand awareness",
+                    "Increase in sales",
+                    "Increase in profit",
+                    "Increase in employee satisfaction"
+                ],
+                "answer": "Increase in employee satisfaction",
+                "explanation": "Growth measures mentioned are brand awareness, sales, profit, and market share; employee satisfaction is not listed."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "In an unlimited liability business, the owner\u2019s personal assets are:",
+                "options": [
+                    "Protected from business debts",
+                    "At risk if the business incurs debt",
+                    "Only liable up to their investment",
+                    "Not involved in any liability"
+                ],
+                "answer": "At risk if the business incurs debt",
+                "explanation": "Unlimited liability means owners are personally responsible for all debts, putting personal assets at risk."
+            },
+            {
+                "type": "written",
+                "question": "Explain how profit is calculated and what a negative value indicates.",
+                "answer": "Profit is calculated by subtracting total costs from total revenue. A negative value indicates a loss.",
+                "explanation": "Profit = Total revenue \u2013 Total costs; if the result is negative, the business has incurred a loss."
+            },
+            {
+                "type": "written",
+                "question": "Differentiate between corporate objectives and functional objectives.",
+                "answer": "Corporate objectives are specific, measurable goals that guide a company\u2019s overall strategic direction, while functional objectives are specific goals set for individual business functions or departments.",
+                "explanation": "Corporate objectives are broader and measurable, whereas functional objectives target specific departments."
+            },
+            {
+                "type": "written",
+                "question": "List two advantages of operating as a sole trader.",
+                "answer": "Complete control over decisions and all profits go directly to the sole trader.",
+                "explanation": "Sole traders enjoy full decision control and receive all profits, with minimal paperwork for starting and running the business."
+            },
+            {
+                "type": "written",
+                "question": "Why is cash flow essential for a business\u2019s survival?",
+                "answer": "Cash flow ensures that a business can cover its cash outflows with cash inflows, maintaining operations and meeting obligations.",
+                "explanation": "Net cash flow = Cash inflows \u2013 Cash outflows; managing it effectively is key to sustaining the business."
+            },
+            {
+                "type": "written",
+                "question": "Describe how changes in supply and demand affect share price.",
+                "answer": "Share price rises when buyers outnumber sellers (higher demand) and falls when sellers outnumber buyers (higher supply).",
+                "explanation": "An excess of buyers pushes price up; an excess of sellers pushes price down."
+            }
+        ]
+    },
+    "b38febd6-bd2b-4be8-b36d-b1eeff822d20": {
+        "subject_id": "business",
+        "topic_id": "Unit 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "What is the formula for calculating revenue?",
+                "options": [
+                    "Price + Quantity sold",
+                    "Price x Quantity sold",
+                    "Quantity sold / Price",
+                    "Price - Quantity sold"
+                ],
+                "answer": "Price x Quantity sold",
+                "explanation": "Revenue is calculated by multiplying the price of a product by the quantity sold."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which of the following is NOT an example of a fixed cost?",
+                "options": [
+                    "Rent",
+                    "Raw materials",
+                    "Salaries",
+                    "Insurance"
+                ],
+                "answer": "Raw materials",
+                "explanation": "Raw materials are a variable cost; rent, salaries and insurance are fixed costs."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "How are total variable costs calculated?",
+                "options": [
+                    "Variable cost per unit x Total units of output",
+                    "Fixed cost per unit x Total units of output",
+                    "Total revenue - Total costs",
+                    "Variable cost per unit / Total units of output"
+                ],
+                "answer": "Variable cost per unit x Total units of output",
+                "explanation": "Total variable costs equal the variable cost per unit multiplied by the total units produced."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Profit is defined as:",
+                "options": [
+                    "Total revenue + Total costs",
+                    "Total revenue - Total costs",
+                    "Total costs - Total revenue",
+                    "Total revenue / Total costs"
+                ],
+                "answer": "Total revenue - Total costs",
+                "explanation": "Profit equals total revenue minus total costs; a negative value indicates a loss."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "What causes a share price to increase?",
+                "options": [
+                    "More sellers than buyers",
+                    "More buyers than sellers",
+                    "Equal numbers of buyers and sellers",
+                    "No buyers in the market"
+                ],
+                "answer": "More buyers than sellers",
+                "explanation": "When demand exceeds supply, the share price rises."
+            },
+            {
+                "type": "written",
+                "question": "Define fixed costs and give two examples.",
+                "answer": "Fixed costs are expenses that do not vary with the level of production. Examples include rent and salaries.",
+                "explanation": "Fixed costs remain constant regardless of how much is produced."
+            },
+            {
+                "type": "written",
+                "question": "Define variable costs and give two examples.",
+                "answer": "Variable costs fluctuate with changes in production level. Examples are raw materials and packaging.",
+                "explanation": "Variable costs increase or decrease as output changes."
+            },
+            {
+                "type": "written",
+                "question": "Explain how total costs are calculated.",
+                "answer": "Total costs are calculated by adding fixed costs to variable costs.",
+                "explanation": "The formula is Total Costs = Fixed Costs + Variable Costs."
+            },
+            {
+                "type": "written",
+                "question": "List three business objectives and explain how profit can be increased.",
+                "answer": "Business objectives include growth, profit, and survival. Profit can be increased by raising revenue or reducing costs.",
+                "explanation": "Growth objectives measure brand awareness, sales, profit, and market share; profit is directly affected by revenue and cost management."
+            },
+            {
+                "type": "written",
+                "question": "Explain the difference between unlimited and limited liability.",
+                "answer": "Unlimited liability means owners are personally responsible for all debts, risking personal assets. Limited liability limits owners\u2019 responsibility to their investment, protecting personal assets.",
+                "explanation": "In unlimited liability, the business and owner are the same legal entity; in limited liability, the business is a separate entity."
+            }
+        ],
+        "results": {
+            "score": 15,
+            "total": 20,
+            "answers": [
+                {
+                    "question": "What is the formula for calculating revenue?",
+                    "user_answer": "Price x Quantity sold",
+                    "correct_answer": "Price x Quantity sold",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Revenue is calculated by multiplying the price of a product by the quantity sold."
+                },
+                {
+                    "question": "Which of the following is NOT an example of a fixed cost?",
+                    "user_answer": "Insurance",
+                    "correct_answer": "Raw materials",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 1,
+                    "explanation": "Raw materials are a variable cost; rent, salaries and insurance are fixed costs."
+                },
+                {
+                    "question": "How are total variable costs calculated?",
+                    "user_answer": "Variable cost per unit x Total units of output",
+                    "correct_answer": "Variable cost per unit x Total units of output",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Total variable costs equal the variable cost per unit multiplied by the total units produced."
+                },
+                {
+                    "question": "Profit is defined as:",
+                    "user_answer": "Total revenue - Total costs",
+                    "correct_answer": "Total revenue - Total costs",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Profit equals total revenue minus total costs; a negative value indicates a loss."
+                },
+                {
+                    "question": "What causes a share price to increase?",
+                    "user_answer": "More buyers than sellers",
+                    "correct_answer": "More buyers than sellers",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "When demand exceeds supply, the share price rises."
+                },
+                {
+                    "question": "Define fixed costs and give two examples.",
+                    "user_answer": "Fixed costs is costs that do not vary with output and stay the same, Examples are rent and salaries",
+                    "correct_answer": "Fixed costs are expenses that do not vary with the level of production. Examples include rent and salaries.",
+                    "is_correct": true,
+                    "marks": 3,
+                    "max_marks": 3,
+                    "explanation": "You correctly defined fixed costs and provided appropriate examples."
+                },
+                {
+                    "question": "Define variable costs and give two examples.",
+                    "user_answer": "Variable costs are costs that vary with output for example raw materials.",
+                    "correct_answer": "Variable costs fluctuate with changes in production level. Examples are raw materials and packaging.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "Explain how total costs are calculated.",
+                    "user_answer": "Total costs is fixed costs + variable costs.",
+                    "correct_answer": "Total costs are calculated by adding fixed costs to variable costs.",
+                    "is_correct": true,
+                    "marks": 3,
+                    "max_marks": 3,
+                    "explanation": "You correctly identified that total costs are the sum of fixed and variable costs."
+                },
+                {
+                    "question": "List three business objectives and explain how profit can be increased.",
+                    "user_answer": "One business objective may be survival.\r\nAnother may be growth.",
+                    "correct_answer": "Business objectives include growth, profit, and survival. Profit can be increased by raising revenue or reducing costs.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified two of the three business objectives, but you missed the third and did not explain how profit can be increased."
+                },
+                {
+                    "question": "Explain the difference between unlimited and limited liability.",
+                    "user_answer": "Unlimited liability is when owners are not limited to what they owe to the business.\r\nLimited liability is when a owner is limited to how much they are in debt to the business.",
+                    "correct_answer": "Unlimited liability means owners are personally responsible for all debts, risking personal assets. Limited liability limits owners\u2019 responsibility to their investment, protecting personal assets.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                }
+            ]
+        }
+    },
+    "d90eb679-4045-4c0a-9a29-ee322f2c42a4": {
+        "subject_id": "business",
+        "topic_id": "Unit 1",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Revenue is calculated by which of the following formulas?",
+                "options": [
+                    "Price + Quantity sold",
+                    "Price x Quantity sold",
+                    "Total costs - Fixed costs",
+                    "Fixed costs + Variable costs"
+                ],
+                "answer": "Price x Quantity sold",
+                "explanation": "Revenue equals the price of each unit sold multiplied by the number of units sold."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Total variable costs are calculated as:",
+                "options": [
+                    "Variable cost per unit x Total units of output",
+                    "Fixed cost per unit x Total units",
+                    "Total revenue - Total costs",
+                    "Fixed costs + Variable costs"
+                ],
+                "answer": "Variable cost per unit x Total units of output",
+                "explanation": "Variable costs change with production level and are found by multiplying the cost per unit by the total units produced."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Profit is defined as:",
+                "options": [
+                    "Total revenue + Total costs",
+                    "Total revenue - Total costs",
+                    "Total costs - Total revenue",
+                    "Fixed costs - Variable costs"
+                ],
+                "answer": "Total revenue - Total costs",
+                "explanation": "Profit equals the difference between total revenue and total costs; a positive value is a gain, a negative value is a loss."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Unlimited liability means:",
+                "options": [
+                    "Owners are only liable up to their investment",
+                    "Owners are personally responsible for all debts",
+                    "Business is a separate legal entity",
+                    "Business has no personal asset risk"
+                ],
+                "answer": "Owners are personally responsible for all debts",
+                "explanation": "In an unlimited liability structure, the business and owner are legally the same, putting personal assets at risk."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Share price increases when:",
+                "options": [
+                    "More sellers than buyers",
+                    "More buyers than sellers",
+                    "Supply equals demand",
+                    "Demand decreases"
+                ],
+                "answer": "More buyers than sellers",
+                "explanation": "A higher number of buyers than sellers drives the share price upward."
+            },
+            {
+                "type": "written",
+                "question": "Give three examples of fixed costs.",
+                "answer": "Rent, Salaries, Insurance",
+                "explanation": "These expenses do not vary with the level of production and are listed as examples of fixed costs."
+            },
+            {
+                "type": "written",
+                "question": "Explain the difference between corporate objectives and functional objectives.",
+                "answer": "Corporate objectives are long\u2011term, specific and measurable goals that guide the overall strategy of the company, while functional objectives are specific goals set for individual business functions or departments.",
+                "explanation": "Corporate objectives provide the broad direction for the entire organization, whereas functional objectives focus on performance within particular areas."
+            },
+            {
+                "type": "written",
+                "question": "List the advantages of operating as a sole trader.",
+                "answer": "Complete control over the business, simplicity of starting and running with minimal paperwork, all profits go directly to the owner.",
+                "explanation": "These are the benefits highlighted for sole traders in the revision notes."
+            },
+            {
+                "type": "written",
+                "question": "Define cash flow and explain why it is essential for business survival.",
+                "answer": "Cash flow is the movement of money into and out of a business; net cash flow equals cash inflows minus cash outflows. It is essential because it ensures the business can meet obligations, invest, and survive.",
+                "explanation": "Effective cash flow management is critical for day\u2011to\u2011day operations and long\u2011term viability."
+            },
+            {
+                "type": "written",
+                "question": "What is a social enterprise?",
+                "answer": "A business that prioritises social or environmental goals while also generating profit.",
+                "explanation": "Social enterprises combine profit\u2011making with a social mission, as defined in the notes."
+            }
+        ],
+        "results": {
+            "score": 11,
+            "total": 20,
+            "answers": [
+                {
+                    "question": "Revenue is calculated by which of the following formulas?",
+                    "user_answer": "Price x Quantity sold",
+                    "correct_answer": "Price x Quantity sold",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Revenue equals the price of each unit sold multiplied by the number of units sold."
+                },
+                {
+                    "question": "Total variable costs are calculated as:",
+                    "user_answer": "Variable cost per unit x Total units of output",
+                    "correct_answer": "Variable cost per unit x Total units of output",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Variable costs change with production level and are found by multiplying the cost per unit by the total units produced."
+                },
+                {
+                    "question": "Profit is defined as:",
+                    "user_answer": "Total revenue - Total costs",
+                    "correct_answer": "Total revenue - Total costs",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Profit equals the difference between total revenue and total costs; a positive value is a gain, a negative value is a loss."
+                },
+                {
+                    "question": "Unlimited liability means:",
+                    "user_answer": "Owners are personally responsible for all debts",
+                    "correct_answer": "Owners are personally responsible for all debts",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "In an unlimited liability structure, the business and owner are legally the same, putting personal assets at risk."
+                },
+                {
+                    "question": "Share price increases when:",
+                    "user_answer": "More buyers than sellers",
+                    "correct_answer": "More buyers than sellers",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "A higher number of buyers than sellers drives the share price upward."
+                },
+                {
+                    "question": "Give three examples of fixed costs.",
+                    "user_answer": "Wages, rent,",
+                    "correct_answer": "Rent, Salaries, Insurance",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified one fixed cost (rent) but missed the other two examples and included a variable cost (wages)."
+                },
+                {
+                    "question": "Explain the difference between corporate objectives and functional objectives.",
+                    "user_answer": "Corporate objectives are objectives managers and other employees need to do in order to reach the aim. Functional objectives are operational objectives such as production to help reach the aim of the business.",
+                    "correct_answer": "Corporate objectives are long\u2011term, specific and measurable goals that guide the overall strategy of the company, while functional objectives are specific goals set for individual business functions or departments.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified that functional objectives are operational, but your description of corporate objectives is unclear and missing key details such as their long\u2011term, specific, measurable nature and role in guiding overall strategy."
+                },
+                {
+                    "question": "List the advantages of operating as a sole trader.",
+                    "user_answer": "Sole traders are their own boss, they get to keep all their profits, and decision making is quicker.",
+                    "correct_answer": "Complete control over the business, simplicity of starting and running with minimal paperwork, all profits go directly to the owner.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main ideas correctly, but missed an important detail."
+                },
+                {
+                    "question": "Define cash flow and explain why it is essential for business survival.",
+                    "user_answer": "Cash flow is how money flows in and out the business. If cash flow is bad then a business may be in debt and may not be able to pay suppliers or fund to survive.",
+                    "correct_answer": "Cash flow is the movement of money into and out of a business; net cash flow equals cash inflows minus cash outflows. It is essential because it ensures the business can meet obligations, invest, and survive.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "What is a social enterprise?",
+                    "user_answer": "Not sure",
+                    "correct_answer": "A business that prioritises social or environmental goals while also generating profit.",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 3,
+                    "explanation": "Your answer does not address the question."
+                }
+            ]
+        }
+    },
+    "ff4e8576-72da-4100-8045-1dca704065b9": {
+        "subject_id": "business",
+        "topic_id": "Unit 2",
+        "questions": [
+            {
+                "type": "multiple_choice",
+                "question": "Which type of manager is responsible for strategic direction and making high-level decisions?",
+                "options": [
+                    "Senior Managers",
+                    "Middle-Level Managers",
+                    "Lower-Level Managers",
+                    "None of the above"
+                ],
+                "answer": "Senior Managers",
+                "explanation": "Senior managers such as CEOs, CFOs, and CMOs set strategic direction and make high\u2011level decisions."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which leadership style involves making decisions alone and expects strict obedience from employees?",
+                "options": [
+                    "Autocratic",
+                    "Paternalistic",
+                    "Democratic",
+                    "Laissez\u2011Faire"
+                ],
+                "answer": "Autocratic",
+                "explanation": "Autocratic leaders make decisions alone, exercise full control, and expect strict obedience."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "In the Tannenbaum & Schmidt Continuum, which end represents a manager\u2011centered approach?",
+                "options": [
+                    "Authoritative",
+                    "Democratic",
+                    "Subordinate\u2011centered",
+                    "Collaborative"
+                ],
+                "answer": "Authoritative",
+                "explanation": "The continuum ranges from manager\u2011centered (authoritative) to subordinate\u2011centered (democratic)."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which decision\u2011making approach relies on gut feelings and personal experience rather than data analysis?",
+                "options": [
+                    "Scientific",
+                    "Intuition",
+                    "Analytical",
+                    "Empirical"
+                ],
+                "answer": "Intuition",
+                "explanation": "Intuition decision\u2011making uses instincts and personal experience instead of data."
+            },
+            {
+                "type": "multiple_choice",
+                "question": "Which factor is NOT listed as an influence on decision\u2011making?",
+                "options": [
+                    "Mission & Objectives",
+                    "Ethics",
+                    "External Environment",
+                    "Personal Hobbies"
+                ],
+                "answer": "Personal Hobbies",
+                "explanation": "Personal hobbies are not mentioned; the listed influences are mission, ethics, external environment, and resource constraints."
+            },
+            {
+                "type": "written",
+                "question": "Explain the primary difference between management and leadership as described in the notes.",
+                "answer": "Management focuses on executing tasks and maintaining order, while leadership inspires vision and drives change for the future.",
+                "explanation": "Management is about planning, organizing, and controlling; leadership is about guiding, motivating, and inspiring."
+            },
+            {
+                "type": "written",
+                "question": "Describe the main advantage of a democratic leadership style.",
+                "answer": "It encourages diverse ideas and creativity, engages and motivates team members, and fosters ownership of decisions.",
+                "explanation": "Democratic leaders value team input, leading to engagement, creativity, and shared responsibility."
+            },
+            {
+                "type": "written",
+                "question": "What is opportunity cost in decision\u2011making?",
+                "answer": "The value of the next best alternative foregone when a choice is made.",
+                "explanation": "Opportunity cost represents what is lost by choosing one option over another."
+            },
+            {
+                "type": "written",
+                "question": "Identify two examples of uncertainty mentioned in the notes.",
+                "answer": "Economic conditions and global events.",
+                "explanation": "Uncertainty includes unknown outcomes such as economic conditions and global events."
+            },
+            {
+                "type": "written",
+                "question": "How does stakeholder mapping categorize stakeholders?",
+                "answer": "Based on their level of influence and interest.",
+                "explanation": "Stakeholder mapping groups stakeholders by how much influence they have and how interested they are."
+            }
+        ],
+        "results": {
+            "score": 12,
+            "total": 20,
+            "answers": [
+                {
+                    "question": "Which type of manager is responsible for strategic direction and making high-level decisions?",
+                    "user_answer": "Senior Managers",
+                    "correct_answer": "Senior Managers",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Senior managers such as CEOs, CFOs, and CMOs set strategic direction and make high\u2011level decisions."
+                },
+                {
+                    "question": "Which leadership style involves making decisions alone and expects strict obedience from employees?",
+                    "user_answer": "Autocratic",
+                    "correct_answer": "Autocratic",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Autocratic leaders make decisions alone, exercise full control, and expect strict obedience."
+                },
+                {
+                    "question": "In the Tannenbaum & Schmidt Continuum, which end represents a manager\u2011centered approach?",
+                    "user_answer": "Authoritative",
+                    "correct_answer": "Authoritative",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "The continuum ranges from manager\u2011centered (authoritative) to subordinate\u2011centered (democratic)."
+                },
+                {
+                    "question": "Which decision\u2011making approach relies on gut feelings and personal experience rather than data analysis?",
+                    "user_answer": "Intuition",
+                    "correct_answer": "Intuition",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Intuition decision\u2011making uses instincts and personal experience instead of data."
+                },
+                {
+                    "question": "Which factor is NOT listed as an influence on decision\u2011making?",
+                    "user_answer": "Personal Hobbies",
+                    "correct_answer": "Personal Hobbies",
+                    "is_correct": true,
+                    "marks": 1,
+                    "max_marks": 1,
+                    "explanation": "Personal hobbies are not mentioned; the listed influences are mission, ethics, external environment, and resource constraints."
+                },
+                {
+                    "question": "Explain the primary difference between management and leadership as described in the notes.",
+                    "user_answer": "Management is organising and delegating tasks to employees. Leadership is when people look up to someone and a leader encourages and motivates them.",
+                    "correct_answer": "Management focuses on executing tasks and maintaining order, while leadership inspires vision and drives change for the future.",
+                    "is_correct": false,
+                    "marks": 2,
+                    "max_marks": 3,
+                    "explanation": "You explained the main idea correctly, but missed an important detail."
+                },
+                {
+                    "question": "Describe the main advantage of a democratic leadership style.",
+                    "user_answer": "People feel heard and feel included, more motivated employees.",
+                    "correct_answer": "It encourages diverse ideas and creativity, engages and motivates team members, and fosters ownership of decisions.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You captured some key aspects of democratic leadership, such as employee motivation and inclusion, but missed other important points like encouraging diverse ideas, fostering creativity, and promoting ownership of decisions."
+                },
+                {
+                    "question": "What is opportunity cost in decision\u2011making?",
+                    "user_answer": "The value of the next best alternative foregone.",
+                    "correct_answer": "The value of the next best alternative foregone when a choice is made.",
+                    "is_correct": true,
+                    "marks": 3,
+                    "max_marks": 3,
+                    "explanation": "You captured the core concept accurately. The definition is complete and directly addresses the question."
+                },
+                {
+                    "question": "Identify two examples of uncertainty mentioned in the notes.",
+                    "user_answer": "Not sure",
+                    "correct_answer": "Economic conditions and global events.",
+                    "is_correct": false,
+                    "marks": 0,
+                    "max_marks": 3,
+                    "explanation": "Your answer does not provide any examples of uncertainty."
+                },
+                {
+                    "question": "How does stakeholder mapping categorize stakeholders?",
+                    "user_answer": "Most important and least important",
+                    "correct_answer": "Based on their level of influence and interest.",
+                    "is_correct": false,
+                    "marks": 1,
+                    "max_marks": 3,
+                    "explanation": "You identified that stakeholders can be ranked by importance, but the correct categorization is based on their level of influence and interest."
+                }
+            ]
+        }
+    }
+}
