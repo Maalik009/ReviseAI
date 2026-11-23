@@ -213,6 +213,7 @@ def generate_flashcards(notes):
 
     return data["flashcards"]
 
+
 def generate_quiz(notes):
 
     notes = notes[:10000]
@@ -233,8 +234,9 @@ def generate_quiz(notes):
     3. Make every question clear and specific.
     4. Avoid repeating the same concept.
     5. Make answers accurate and concise.
+    6. Return exactly 10 questions: 5 of each type.
 
-    Return ONLY valid JSON in this exact format:
+    Return a valid JSON object with this structure:
 
     {{
         "questions": [
@@ -272,21 +274,40 @@ def generate_quiz(notes):
                 "content": prompt
             }
         ],
-        temperature=0.2
+        temperature=0.2,
+        response_format={"type": "json_object"},
+        max_completion_tokens=6000
     )
 
     result = response.choices[0].message.content.strip()
 
-    # Remove Markdown code fences if the AI includes them
-    if result.startswith("```"):
-        result = result.replace("```json", "", 1)
-        result = result.replace("```", "", 1).strip()
-
     data = json.loads(result)
-    if "questions" not in data or len(data["questions"]) != 10:
-        raise ValueError("The AI did not generate exactly 10 questions.")
 
-    return data["questions"]
+    if "questions" not in data:
+        raise ValueError("The AI response did not contain questions.")
+
+    questions = data["questions"]
+
+    if len(questions) != 10:
+        raise ValueError(
+            f"Expected 10 questions but received {len(questions)}."
+        )
+
+    mcq_count = sum(
+        1 for q in questions
+        if q.get("type") == "multiple_choice"
+    )
+
+    written_count = sum(
+        1 for q in questions
+        if q.get("type") == "written"
+    )
+
+    if mcq_count != 5 or written_count != 5:
+        raise ValueError("The AI did not generate 5 questions of each type.")
+
+    return questions
+
 
 # homepage
 @app.route("/")
