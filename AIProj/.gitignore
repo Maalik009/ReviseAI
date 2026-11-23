@@ -8,9 +8,10 @@ venv/
 # Python cache files
 __pycache__/
 *.pyc
-
 # Test cache
 .pytest_cache/
+
+# Flashcard and quiz data files
 flashcards.json
 quizzes.json
 flashcards_backup.json
@@ -20,8 +21,4 @@ quizzes_backup.json
 reviseai.db
 reviseai.db-shm
 reviseai.db-wal
-
-# Backup files
-flashcards_backup.json
-quizzes_backup.json
 
