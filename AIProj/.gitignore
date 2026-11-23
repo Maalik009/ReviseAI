@@ -15,3 +15,13 @@ flashcards.json
 quizzes.json
 flashcards_backup.json
 quizzes_backup.json
+
+# SQLite database
+reviseai.db
+reviseai.db-shm
+reviseai.db-wal
+
+# Backup files
+flashcards_backup.json
+quizzes_backup.json
+

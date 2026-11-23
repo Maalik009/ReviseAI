@@ -1,3 +1,6 @@
-
 Flask
-pytest
+markdown
+python-dotenv
+groq
+gunicorn
+psycopg[binary]

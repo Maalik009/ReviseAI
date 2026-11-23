@@ -2,6 +2,8 @@ import os
 import json
 import re
 import uuid
+import sqlite3
+import psycopg
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -18,7 +20,6 @@ from flask import (
     send_from_directory,
     url_for
 )
-from flask import Flask, abort, render_template
 
 app = Flask(__name__)
 
@@ -32,6 +33,7 @@ BASE_DIR = Path(__file__).resolve().parent
 NOTES_DIR = BASE_DIR / "notes"
 FLASHCARDS_FILE = BASE_DIR / "flashcards.json"
 QUIZZES_FILE = BASE_DIR / "quizzes.json"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 def make_title(name):
     return name.replace("-", " ").replace("_", " ").title()
@@ -74,39 +76,66 @@ def get_subject(subject_id):
         None
     )
 
-# Load all saved flashcards
+
+# Initialise the PostgreSQL database
+def init_db():
+    with psycopg.connect(DATABASE_URL) as conn:
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS app_data (
+                name TEXT PRIMARY KEY,
+                data TEXT NOT NULL
+            )
+        """)
+
+
+# Load data from PostgreSQL
+def load_data(name):
+    with psycopg.connect(DATABASE_URL) as conn:
+        row = conn.execute(
+            "SELECT data FROM app_data WHERE name = %s",
+            (name,)
+        ).fetchone()
+
+    if row is None:
+        return {}
+
+    return json.loads(row[0])
+
+
+# Save data to PostgreSQL
+def save_data(name, data):
+    with psycopg.connect(DATABASE_URL) as conn:
+        conn.execute(
+            """
+            INSERT INTO app_data (name, data)
+            VALUES (%s, %s)
+            ON CONFLICT(name)
+            DO UPDATE SET data = EXCLUDED.data
+            """,
+            (name, json.dumps(data))
+        )
+
+
+# Flashcard storage functions
 def load_flashcards():
-
-    if not FLASHCARDS_FILE.exists():
-        return {}
-
-    return json.loads(
-        FLASHCARDS_FILE.read_text(encoding="utf-8")
-    )
+    return load_data("flashcards")
 
 
-# Save all flashcards
 def save_flashcards(flashcards):
+    save_data("flashcards", flashcards)
 
-    FLASHCARDS_FILE.write_text(
-        json.dumps(flashcards, indent=4),
-        encoding="utf-8"
-    )
 
+# Quiz storage functions
 def load_quizzes():
-    if not QUIZZES_FILE.exists():
-        return {}
-
-    return json.loads(
-        QUIZZES_FILE.read_text(encoding="utf-8")
-    )
+    return load_data("quizzes")
 
 
 def save_quizzes(quizzes):
-    QUIZZES_FILE.write_text(
-        json.dumps(quizzes, indent=4),
-        encoding="utf-8"
-    )
+    save_data("quizzes", quizzes)
+
+
+# Initialise the database
+init_db()
 
 
 def generate_flashcards(notes):
@@ -734,4 +763,4 @@ Return ONLY valid JSON:
     ))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
