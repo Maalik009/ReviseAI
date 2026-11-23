@@ -3,7 +3,6 @@ import json
 import re
 import uuid
 import sqlite3
-import psycopg
 from pathlib import Path
 from urllib.parse import unquote
 
@@ -33,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent
 NOTES_DIR = BASE_DIR / "notes"
 FLASHCARDS_FILE = BASE_DIR / "flashcards.json"
 QUIZZES_FILE = BASE_DIR / "quizzes.json"
-DATABASE_URL = os.getenv("DATABASE_URL")
+DATABASE_FILE = BASE_DIR / "reviseai.db"
 
 def make_title(name):
     return name.replace("-", " ").replace("_", " ").title()
@@ -76,10 +75,9 @@ def get_subject(subject_id):
         None
     )
 
-
-# Initialise the PostgreSQL database
+# Initialise the SQLite database and migrate existing JSON data
 def init_db():
-    with psycopg.connect(DATABASE_URL) as conn:
+    with sqlite3.connect(DATABASE_FILE) as conn:
         conn.execute("""
             CREATE TABLE IF NOT EXISTS app_data (
                 name TEXT PRIMARY KEY,
@@ -87,12 +85,35 @@ def init_db():
             )
         """)
 
+        # Import existing JSON data only if it isn't already in the database
+        for name, file_path in (
+            ("flashcards", FLASHCARDS_FILE),
+            ("quizzes", QUIZZES_FILE)
+        ):
+            existing = conn.execute(
+                "SELECT 1 FROM app_data WHERE name = ?",
+                (name,)
+            ).fetchone()
 
-# Load data from PostgreSQL
+            if existing is None:
+                if file_path.exists():
+                    data = json.loads(
+                        file_path.read_text(encoding="utf-8")
+                    )
+                else:
+                    data = {}
+
+                conn.execute(
+                    "INSERT INTO app_data (name, data) VALUES (?, ?)",
+                    (name, json.dumps(data))
+                )
+
+
+# Load data from SQLite
 def load_data(name):
-    with psycopg.connect(DATABASE_URL) as conn:
+    with sqlite3.connect(DATABASE_FILE) as conn:
         row = conn.execute(
-            "SELECT data FROM app_data WHERE name = %s",
+            "SELECT data FROM app_data WHERE name = ?",
             (name,)
         ).fetchone()
 
@@ -102,15 +123,15 @@ def load_data(name):
     return json.loads(row[0])
 
 
-# Save data to PostgreSQL
+# Save data to SQLite
 def save_data(name, data):
-    with psycopg.connect(DATABASE_URL) as conn:
+    with sqlite3.connect(DATABASE_FILE) as conn:
         conn.execute(
             """
             INSERT INTO app_data (name, data)
-            VALUES (%s, %s)
+            VALUES (?, ?)
             ON CONFLICT(name)
-            DO UPDATE SET data = EXCLUDED.data
+            DO UPDATE SET data = excluded.data
             """,
             (name, json.dumps(data))
         )
