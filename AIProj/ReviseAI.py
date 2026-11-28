@@ -75,6 +75,7 @@ def get_subject(subject_id):
         None
     )
 
+
 # Initialise the SQLite database and migrate existing JSON data
 def init_db():
     with sqlite3.connect(DATABASE_FILE) as conn:
@@ -85,7 +86,7 @@ def init_db():
             )
         """)
 
-        # Create the database table if it does not already exist
+        
         # Import existing JSON data only if it isn't already in the database
         for name, file_path in (
             ("flashcards", FLASHCARDS_FILE),
@@ -211,6 +212,7 @@ def generate_flashcards(notes):
     result = response.choices[0].message.content
     data = json.loads(result)
     return data["flashcards"]
+
 
 def generate_quiz(notes):
 
@@ -376,6 +378,8 @@ def topic_page(subject_id, topic_id):
     "/subjects/<subject_id>/<topic_id>/flashcards",
     methods=["GET", "POST"]
 )
+
+
 def flashcards_page(subject_id, topic_id):
 
     subject = get_subject(subject_id)
@@ -615,6 +619,7 @@ def generate_quiz_page(subject_id, topic_id):
         quiz_id=quiz_id
     ))
 
+
 @app.route("/quiz/<quiz_id>")
 def take_quiz(quiz_id):
 
@@ -651,6 +656,7 @@ def take_quiz(quiz_id):
         topic=topic
     )
 
+
 @app.route("/quiz/<quiz_id>/results")
 def quiz_results(quiz_id):
 
@@ -675,6 +681,7 @@ def quiz_results(quiz_id):
         total=saved_results["total"],
         quiz_id=quiz_id
     )
+
 
 @app.route("/quiz/<quiz_id>/submit", methods=["POST"])
 def submit_quiz(quiz_id):
