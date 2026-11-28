@@ -150,6 +150,73 @@ Possible future improvements include:
 - Additional subjects and revision resources.
 - Further testing and improvements to AI reliability.
 
+
+## System Architecture
+
+ReviseAI follows a client-server architecture using Flask as its backend web framework.
+
+The application is divided into several components, each responsible for a different part of the system.
+
+### 1. Backend – Python and Flask
+
+The backend is managed by `ReviseAI.py`. It handles the main application logic, including:
+
+- Defining URL routes and handling incoming requests.
+- Loading revision notes from Markdown files.
+- Retrieving and saving application data using SQLite.
+- Processing flashcard and quiz submissions.
+- Communicating with the Groq API for AI-powered features.
+- Passing information to HTML templates for display.
+
+Flask connects the backend functionality to the website's pages.
+
+### 2. Frontend – HTML, CSS and JavaScript
+
+The frontend is responsible for the user interface and how users interact with the application.
+
+- **HTML templates:** Define the structure and content of each page.
+- **CSS:** Controls the appearance, layout and styling of the website.
+- **JavaScript:** Provides additional client-side interactivity where required.
+- **Static resources:** Store stylesheets, images and other files used by the frontend.
+
+Flask uses its template-rendering system to insert application data into the relevant HTML pages.
+
+### 3. Revision Notes – Markdown
+
+Revision content is stored in Markdown files inside the `notes/` directory.
+
+Notes are organised into subject folders, with individual Markdown files representing topics.
+
+The application reads these files and converts their Markdown content into HTML so that revision material can be displayed on the website.
+
+This organisation makes it easier to maintain and expand revision content without having to change the main Python application.
+
+### 4. Database – SQLite
+
+ReviseAI uses SQLite to store application data locally.
+
+The database is initialised by the application when it starts. Application data is stored and retrieved through database functions, allowing features such as flashcards and quiz results to persist between sessions.
+
+SQLite was chosen because it does not require a separate database server, making it suitable for a locally running application.
+
+### 5. AI Integration – Groq API
+
+The Groq API provides the AI functionality used by ReviseAI.
+
+When a user requests AI-generated revision material, the application sends relevant revision notes to the API along with instructions describing the required response.
+
+The application processes the returned response and uses it to create flashcards or quizzes.
+
+Written quiz answers are also assessed using AI, allowing answers to be evaluated based on their content rather than relying only on exact text matching.
+
+The API key is stored in a local `.env` file and loaded using environment variables. This prevents the secret key from needing to be written directly into the source code.
+
+
 ## Author
 
 Developed as a personal programming project to explore Python, Flask, web development, databases and AI integration.
+
+
+
+
+
