@@ -20,6 +20,11 @@ from flask import (
     url_for
 )
 
+BASE_DIR = Path(__file__).resolve().parent
+NOTES_DIR = BASE_DIR / "notes"
+FLASHCARDS_FILE = BASE_DIR / "flashcards.json"
+QUIZZES_FILE = BASE_DIR / "quizzes.json"
+DATABASE_FILE = BASE_DIR / "reviseai.db"
 app = Flask(__name__)
 
 load_dotenv()
@@ -28,11 +33,6 @@ client = Groq(
     api_key=os.getenv("GROQ_API_KEY")
 )
 
-BASE_DIR = Path(__file__).resolve().parent
-NOTES_DIR = BASE_DIR / "notes"
-FLASHCARDS_FILE = BASE_DIR / "flashcards.json"
-QUIZZES_FILE = BASE_DIR / "quizzes.json"
-DATABASE_FILE = BASE_DIR / "reviseai.db"
 
 def make_title(name):
     return name.replace("-", " ").replace("_", " ").title()
@@ -85,6 +85,7 @@ def init_db():
             )
         """)
 
+        # Create the database table if it does not already exist
         # Import existing JSON data only if it isn't already in the database
         for name, file_path in (
             ("flashcards", FLASHCARDS_FILE),
@@ -94,7 +95,7 @@ def init_db():
                 "SELECT 1 FROM app_data WHERE name = ?",
                 (name,)
             ).fetchone()
-
+# Check whether this data collection already exists in SQLite
             if existing is None:
                 if file_path.exists():
                     data = json.loads(
@@ -162,7 +163,7 @@ init_db()
 def generate_flashcards(notes):
 
     notes = notes[:10000]
-
+# Build the instructions sent to the AI model
     prompt = f"""
     You are ReviseAI, a careful revision assistant.
 
@@ -206,13 +207,10 @@ def generate_flashcards(notes):
         ],
         temperature=0.2
     )
-
+# Convert the AI's JSON response into Python data
     result = response.choices[0].message.content
-
     data = json.loads(result)
-
     return data["flashcards"]
-
 
 def generate_quiz(notes):
 
@@ -265,7 +263,7 @@ def generate_quiz(notes):
 
     {notes}
     """
-
+# Parse the generated quiz response
     response = client.chat.completions.create(
         model="openai/gpt-oss-20b",
         messages=[
@@ -292,12 +290,12 @@ def generate_quiz(notes):
         raise ValueError(
             f"Expected 10 questions but received {len(questions)}."
         )
-
+# Count each question type to validate the quiz structure
     mcq_count = sum(
         1 for q in questions
         if q.get("type") == "multiple_choice"
     )
-
+# Return the validated questions to the calling function
     written_count = sum(
         1 for q in questions
         if q.get("type") == "written"
@@ -362,7 +360,7 @@ def topic_page(subject_id, topic_id):
     note_file = NOTES_DIR / subject_id / f"{topic_id}.md"
 
     note_text = note_file.read_text(encoding="utf-8")
-
+# Convert Markdown revision notes into HTML for the webpage
     topic["content_html"] = markdown.markdown(
         note_text,
         extensions=["fenced_code", "tables"]
@@ -404,7 +402,7 @@ def flashcards_page(subject_id, topic_id):
 
         action = request.form.get("action", "add")
 
-        # Add a new flashcard
+       # Identify the flashcard collection using its subject and topic IDs
         if action == "add":
             question = request.form.get("question", "").strip()
             answer = request.form.get("answer", "").strip()
@@ -459,7 +457,7 @@ def flashcards_page(subject_id, topic_id):
 
 
 
-        # Delete an existing flashcard
+        # Remove the selected flashcard from the collection
         elif action == "delete":
             try:
                 card_index = int(request.form.get("card_index", ""))
@@ -543,7 +541,7 @@ def generate_flashcards_page(subject_id, topic_id):
         # Ask Groq to generate flashcards
         new_cards = generate_flashcards(notes)
 
-        # Save them alongside existing flashcards
+       # Add the generated cards to the existing topic collection
         key = f"{subject_id}/{topic_id}"
         all_flashcards = load_flashcards()
 
@@ -593,7 +591,7 @@ def generate_quiz_page(subject_id, topic_id):
         # Generate the quiz questions
         questions = generate_quiz(notes)
 
-        # Create a unique quiz ID
+        # Generate a unique identifier for the new quiz
         import uuid
         quiz_id = str(uuid.uuid4())
 
@@ -708,8 +706,8 @@ def submit_quiz(quiz_id):
 
             if is_correct:
                 score += 1
-
-            results.append({
+# Compare multiple-choice answers without considering letter case
+  results.append({
     "question": question["question"],
     "user_answer": user_answer,
     "correct_answer": correct_answer,
@@ -753,7 +751,7 @@ Return ONLY valid JSON:
     "feedback": "You explained the main idea correctly, but missed an important detail."
 }}
 """
-
+# Ask the AI to assess the written answer against the model answer
             response = client.chat.completions.create(
                 model="openai/gpt-oss-20b",
                 messages=[
@@ -783,7 +781,7 @@ Return ONLY valid JSON:
                 "explanation": marking.get("feedback", "")
             })
 
-          # Calculate the maximum available marks
+         # Calculate the maximum possible score for the quiz
     total_marks = sum(
         1 if question["type"] == "multiple_choice" else 3
         for question in questions
